@@ -1,0 +1,18 @@
+project-root/
+├── config/
+│   ├── db.js                 // PostgreSQL 설정 (사용 안 할 경우 삭제 가능)
+│   ├── firebaseConfig.js      // Firebase Admin SDK 설정 파일
+├── controllers/
+│   ├── bookControllers.js     // 신간 도서 추가 및 알림 전송을 담당하는 컨트롤러
+│   ├── notificationControllers.js // 알림 전송 로직 컨트롤러
+├── models/
+│   ├── bookModels.js          // 신간 도서 관련 Firestore CRUD 로직
+│   └── notificationModels.js  // 알림 관련 로직 (선택 사항)
+├── routes/
+│   ├── bookRoutes.js          // 신간 도서 관련 라우터
+│   ├── notificationRoutes.js   // 알림 관련 라우터 (필요 시)
+├── utils/
+│   ├── emailSender.js         // nodemailer를 이용한 이메일 전송 유틸리티
+├── .env                        // 환경 변수 설정 파일 (이메일 및 Firebase 서비스 계정)
+├── app.js                      // Express 서버 초기 설정 및 라우터 연결
+└── README.md                   // 프로젝트 설명서
