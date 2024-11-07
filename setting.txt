@@ -1,3 +1,5 @@
+신간도서_SMPT 관련 구조
+
 project-root/
 ├── config/
 │   ├── db.js                 // PostgreSQL 설정 (사용 안 할 경우 삭제 가능)
